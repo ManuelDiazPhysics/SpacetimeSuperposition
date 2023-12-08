@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18455,        520]
-NotebookOptionsPosition[     17965,        503]
-NotebookOutlinePosition[     18369,        519]
-CellTagsIndexPosition[     18326,        516]
+NotebookDataLength[     18913,        526]
+NotebookOptionsPosition[     18423,        509]
+NotebookOutlinePosition[     18827,        525]
+CellTagsIndexPosition[     18784,        522]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,10 +21,7 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[BoxData[
- RowBox[{
-  RowBox[{"(*", " ", 
-   RowBox[{"Perterbations", " ", "on", " ", "the", " ", "Hamiltonian"}], 
-   "*)"}], "\[IndentingNewLine]", 
+ RowBox[{"\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{
@@ -62,10 +59,7 @@ Cell[BoxData[
    RowBox[{
     RowBox[{
      SubscriptBox["H", "integrand1"], "=", 
-     RowBox[{
-      RowBox[{"-", 
-       RowBox[{
-        SubscriptBox["n", "i"], "[", "x", "]"}]}], "*", 
+     RowBox[{"-", 
       RowBox[{"(", 
        RowBox[{
         RowBox[{
@@ -138,6 +132,9 @@ Cell[BoxData[
      RowBox[{
       SubscriptBox["p", "2"], "[", "x", "]"}], "=", "0"}], ";"}], 
    "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Integrands", " ", "of", " ", 
+     RowBox[{"H", "[", "N", "]"}]}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     SubscriptBox["H", "new"], "=", " ", 
     RowBox[{"Collect", "[", 
@@ -215,13 +212,13 @@ Cell[BoxData[
                 SubscriptBox["\[Phi]", "2"], "[", "x", "]"}]}], "]"}], ",", 
              RowBox[{
               SuperscriptBox[
-               SubscriptBox["\[Phi]", "2"], "\[Prime]\[Prime]",
+               SubscriptBox["\[Phi]", "2"], "\[Prime]",
                MultilineFunction->None], "[", "x", "]"}]}], "]"}], "*", 
            RowBox[{
             SubscriptBox["\[Delta]\[Phi]", "2"], "[", "x", "]"}], "*", 
            RowBox[{
             SuperscriptBox[
-             SubscriptBox["\[Delta]\[Phi]", "2"], "\[Prime]\[Prime]",
+             SubscriptBox["\[Delta]\[Phi]", "2"], "\[Prime]",
              MultilineFunction->None], "[", "x", "]"}]}], "+", 
           RowBox[{
            RowBox[{"D", "[", 
@@ -247,17 +244,13 @@ Cell[BoxData[
               RowBox[{
                SubscriptBox["H", "integrand1"], ",", 
                RowBox[{
-                SuperscriptBox[
-                 SubscriptBox["\[Phi]", "2"], "\[Prime]",
-                 MultilineFunction->None], "[", "x", "]"}]}], "]"}], ",", 
+                SubscriptBox["\[Phi]", "2"], "[", "x", "]"}]}], "]"}], ",", 
              RowBox[{
               SuperscriptBox[
                SubscriptBox["\[Phi]", "2"], "\[Prime]\[Prime]",
                MultilineFunction->None], "[", "x", "]"}]}], "]"}], "*", 
            RowBox[{
-            SuperscriptBox[
-             SubscriptBox["\[Delta]\[Phi]", "2"], "\[Prime]",
-             MultilineFunction->None], "[", "x", "]"}], "*", 
+            SubscriptBox["\[Delta]\[Phi]", "2"], "[", "x", "]"}], "*", 
            RowBox[{
             SuperscriptBox[
              SubscriptBox["\[Delta]\[Phi]", "2"], "\[Prime]\[Prime]",
@@ -268,10 +261,8 @@ Cell[BoxData[
         RowBox[{
          SubscriptBox["n", 
           RowBox[{"(", "0", ")"}]], "[", "x", "]"}], ",", " ", 
-        RowBox[{"\[Delta]n", "[", "x", "]"}], ",", 
-        RowBox[{
-         SubscriptBox["n", "i"], "[", "x", "]"}]}], "}"}], ",", " ", 
-      "Simplify"}], "]"}]}]}]}]], "Input",
+        RowBox[{"\[Delta]n", "[", "x", "]"}]}], "}"}], ",", " ", "Simplify"}],
+      "]"}]}]}]}]], "Input",
  CellChangeTimes->{{3.9110468803041964`*^9, 3.911046901810769*^9}, {
    3.911046966356682*^9, 3.911047035143406*^9}, {3.911047104585437*^9, 
    3.911047214887398*^9}, {3.911047264446641*^9, 3.911047295689248*^9}, {
@@ -282,16 +273,16 @@ Cell[BoxData[
    3.911048464813962*^9, 3.9110484765989866`*^9}, {3.911048542707253*^9, 
    3.911048560706174*^9}, {3.9110490603668537`*^9, 3.91104907585713*^9}, {
    3.911049128859497*^9, 3.9110491362511578`*^9}, {3.911049282492257*^9, 
-   3.911049299548486*^9}},
- CellLabel->"In[47]:=",ExpressionUUID->"f7225d3d-83bc-4258-8507-71b494b1bae4"],
+   3.911049299548486*^9}, {3.9110498595638266`*^9, 3.9110498642671647`*^9}, {
+   3.911049946666661*^9, 3.911049955368104*^9}, {3.911050078970833*^9, 
+   3.911050090473481*^9}, {3.9110501620037823`*^9, 3.9110501918825197`*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"f7225d3d-83bc-4258-8507-71b494b1bae4"],
 
 Cell[BoxData[
  RowBox[{
   FractionBox[
    RowBox[{
     RowBox[{"\[Delta]n", "[", "x", "]"}], " ", 
-    RowBox[{
-     SubscriptBox["n", "i"], "[", "x", "]"}], " ", 
     RowBox[{"(", 
      RowBox[{
       RowBox[{"4", " ", "x", " ", 
@@ -380,8 +371,6 @@ Cell[BoxData[
    RowBox[{
     RowBox[{
      SubscriptBox["n", "0"], "[", "x", "]"}], " ", 
-    RowBox[{
-     SubscriptBox["n", "i"], "[", "x", "]"}], " ", 
     RowBox[{"(", 
      RowBox[{
       RowBox[{"16", " ", "x", " ", 
@@ -467,16 +456,31 @@ Cell[BoxData[
             SubscriptBox["\[Phi]", "2"], "[", "x", "]"}], "2"]}], "-", 
          RowBox[{"9", " ", 
           SuperscriptBox["x", "2"], " ", 
-          SuperscriptBox[
+          RowBox[{
+           SuperscriptBox[
+            SubscriptBox["\[Phi]", "2"], "\[Prime]",
+            MultilineFunction->None], "[", "x", "]"}], " ", 
+          RowBox[{"(", 
            RowBox[{
-            SuperscriptBox[
-             SubscriptBox["\[Phi]", "2"], "\[Prime]",
-             MultilineFunction->None], "[", "x", "]"}], "2"]}], "+", 
+            RowBox[{"2", " ", 
+             RowBox[{
+              SuperscriptBox[
+               SubscriptBox["\[Delta]\[Phi]", "2"], "\[Prime]",
+               MultilineFunction->None], "[", "x", "]"}]}], "+", 
+            RowBox[{
+             SuperscriptBox[
+              SubscriptBox["\[Phi]", "2"], "\[Prime]",
+              MultilineFunction->None], "[", "x", "]"}]}], ")"}]}], "+", 
          RowBox[{"2", " ", "x", " ", 
           RowBox[{
            SubscriptBox["\[Phi]", "2"], "[", "x", "]"}], " ", 
           RowBox[{"(", 
            RowBox[{
+            RowBox[{"3", " ", 
+             RowBox[{
+              SuperscriptBox[
+               SubscriptBox["\[Delta]\[Phi]", "2"], "\[Prime]",
+               MultilineFunction->None], "[", "x", "]"}]}], "+", 
             RowBox[{"3", " ", 
              RowBox[{
               SuperscriptBox[
@@ -497,8 +501,10 @@ Cell[BoxData[
  CellChangeTimes->{
   3.9110481712412596`*^9, 3.911048217071172*^9, 3.9110483364361916`*^9, 
    3.9110484023983326`*^9, 3.911048479535562*^9, 3.9110490883755713`*^9, 
-   3.9110491393434525`*^9, {3.9110492931397133`*^9, 3.9110493021643724`*^9}},
- CellLabel->"Out[53]=",ExpressionUUID->"3e26a63b-7156-4ee5-8aba-9371d4a4d31c"]
+   3.9110491393434525`*^9, {3.9110492931397133`*^9, 3.9110493021643724`*^9}, {
+   3.911049949910721*^9, 3.911049957256297*^9}, {3.9110501687787576`*^9, 
+   3.91105019356805*^9}},
+ CellLabel->"Out[81]=",ExpressionUUID->"00faf34b-704f-4cb8-a731-bcbd47598c41"]
 }, Open  ]]
 },
 WindowSize->{1141.2, 585.6},
@@ -519,12 +525,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 9612, 263, 301, "Input",ExpressionUUID->"f7225d3d-83bc-4258-8507-71b494b1bae4"],
-Cell[10195, 287, 7754, 213, 124, "Output",ExpressionUUID->"3e26a63b-7156-4ee5-8aba-9371d4a4d31c"]
+Cell[580, 22, 9488, 256, 320, "Input",ExpressionUUID->"f7225d3d-83bc-4258-8507-71b494b1bae4"],
+Cell[10071, 280, 8336, 226, 146, "Output",ExpressionUUID->"00faf34b-704f-4cb8-a731-bcbd47598c41"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
